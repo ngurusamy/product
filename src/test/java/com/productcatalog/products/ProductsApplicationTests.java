@@ -28,11 +28,11 @@ class ProductsApplicationTests {
 	void saveCompany(){
 		Product product = new Product();
 		product.setName("Product 1");
-		product.setDescription("Description for Product 1");
+		//product.setDescription("Description for Product 1");
 		List<Product> productList = new ArrayList<>();
 		productList.add(product);
 		Company company = new Company();
-		company.setName("Amazon");
+		//company.setName("Amazon");
 		company.setProducts(productList);
 		company = companyRepository.save(company);   
 		productsApplicationTestslog.info("company-{}",company);   
