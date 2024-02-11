@@ -46,7 +46,7 @@ public class ProductController {
     @PostMapping
     public ResponseEntity<Product> createProduct(@RequestBody Product product) {
         product = productRepository.save(product);
-        productControllerLog.info("pc-{}",product);
+        //productControllerLog.info("pc-{}",product);
         return new ResponseEntity<>(product, HttpStatus.CREATED);
     }
 }

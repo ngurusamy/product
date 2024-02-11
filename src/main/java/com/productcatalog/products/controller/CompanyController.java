@@ -39,9 +39,9 @@ public class CompanyController {
     public List<Company> getAllCompanies() {
         List<Company> companyList = companyRepository.findAll();
        companyControllerLog.info("get - companyList -{}",companyList);
-       for(Company c: companyList){
+       /*for(Company c: companyList){
         companyControllerLog.info("get - getProducts -{}",c.getProducts());
-       }
+       }*/
         return companyList;
     }
 
